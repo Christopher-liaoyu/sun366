@@ -1,4 +1,4 @@
 s2sh
 ====
-
-strut2，hibernate4，jpa2，spring3的一个基本架构
+Sun366网站开发
+strut2，hibernate4，velocity，spring3的基本架构
