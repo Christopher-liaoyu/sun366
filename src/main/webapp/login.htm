@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="zh-CN" xmlns:wb="http://open.weibo.com/wb">
+<!--[if IE 8 ]><html lang="zh-CN" class="ie8"><![endif]--><!--[if IE 9 ]><html lang="zh-CN" class="ie9"><![endif]-->
+<head>
+
+    
+
+
+    
+    
+                
+        
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit|ie-stand|ie-comp" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="Cache-Control" content="no-transform" /><meta http-equiv="Cache-Control" content="no-siteapp" /><meta property="qc:admins" content="3464026660675630510556375" /><meta property="wb:webmaster" content="4658769fd343afda" />
+<link rel="dns-prefetch" href="http://cdn.bootcss.com" /><link rel="dns-prefetch" href="http://apps.bdimg.com" /><link rel="dns-prefetch" href="http://su.bdimg.com" /><link rel="dns-prefetch" href="http://s1.bdstatic.com" /><link rel="dns-prefetch" href="http://api.map.baidu.com" /><link rel="dns-prefetch" href="http://storage.genshuixue.com" /><meta http-equiv="Expires" content="0"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Cache-control" content="no-cache"><meta http-equiv="Cache" content="no-cache"><meta name="keywords" content="阳光366, " /><meta name="description" content="阳光366, " /><title>
+登录
+</title><link rel="shortcut icon" href="https://cdn.genshuixue.com/asset/img/logo.ico" />
+<link rel="stylesheet" href="https://cdn.genshuixue.com/asset/css/static/login.css?v=b9b0e7ee177cd720">
+</head><body>
+
+
+<!--[if lt IE 8]><div class="browser-upgrade"><div class="wrapper">您的浏览器版本过低，为了保证更好的安全性和浏览体验，建议更换高级浏览器，如：<a href="http://www.baidu.com/s?wd=谷歌浏览器">谷歌浏览器</a><a href="http://www.baidu.com/s?wd=火狐浏览器">火狐浏览器</a><a href="http://www.baidu.com/s?wd=360极速浏览器">360 极速浏览器</a></div></div><style>body {padding-top: 40px;}.browser-upgrade {background-color: #DA7575;border-bottom: 1px solid #D65F39;color: #F0F0F0;padding: 10px 0;position: absolute;top: 0;left: 0;width: 100%;z-index: 10000;}.browser-upgrade .wrapper {width: 1100px;margin: 0 auto;}.browser-upgrade a {color: yellow;margin-right: 10px;text-decoration: underline;}</style><![endif]-->
+
+<div id="flotage-bottom">
+    <div class="wrapper">
+        <ul>
+            <li>
+                <a href="#"><i class="icon icon-mobile-o"></i></a>
+                <div class="tip app"><img style="width:98px;height:98px;"src="QR.png"></div>
+            </li>
+            <li class="backup">
+                <i class="icon icon-up"></i><div class="tip"><span>回到顶部</span></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="login-header">
+	<div class="wrapper">
+		<h1><a href="http://www.genshuixue.com/" title="去阳光366首页"><img alt="阳光366"  src="logo-release.png"/></a>找好老师，上阳光366</h1><h2>hi，欢迎来到阳光366！<a class="signup" href="register.htm">免费注册</a><b>|</b><i class="icon icon-phone"></i>027-87301979</h2></div>
+</div>
+
+<div id="main" >
+    <form class="form login-form" data-login="password">
+        <div class="form-radios">
+            <label class=""><input type="radio" name="usertype" value="2"checked="checked"/>学生登录</label><label class="active"><input type="radio" name="usertype" value="0"/>老师登录</label>
+        </div>
+        <div class="form-body">
+            <input type="hidden" name="next" value="%2F"/>
+
+            <div class="form-group sms-prompt">
+                <div class="label label-info"><i class="icon icon-info-circle text-info"></i>仅支持大陆地区手机号码</div>
+            </div>
+            <div id="login-mobile">
+                <div class="form-group mobile-input">
+                    <div class="wrapper disable-international">
+                        
+                        <div class="form-controls">
+                            <div class="tel-code-select">
+                                <div class="trigger">
+                                    <img src="" class="flag">
+                                    <i class="icon icon-caret-down"></i>
+                                </div>
+                                <ul class="dropdown-menu"></ul>
+                            </div>
+                            <input type="hidden" name="tel-code" value="+86">
+                            <span class="tel-code">+86</span>
+                                        <i class="icon icon-mobile"></i>
+                                        <input class="form-text" type="mobile" autocomplete="off" name="mobile" required placeholder="请输入手机号"/>
+                            <span class="error" id="mobile-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group form-password">
+                <div class="form-controls">
+                    <i class="icon icon-lock"></i>
+                    <input class="form-text" type="password" name="password" placeholder="请输入密码" required minlength="6"maxlength="20" autocomplete="off" />
+                    <span class="error"></span>
+                </div>
+            </div>
+            <div class="form-group form-sms">
+                <div class="form-controls">
+                    <input class="form-text sms" type="text" name="verifycode" placeholder="请输入校验码" required pattern="^\d*$" />
+                    <button type="button" class="btn-info form-get-smscode" disabled="true">获取校验码</button>
+                    <span class="error" autocomplete="off" ></span>
+                </div>
+            </div>
+            <div class="form-group form-wechat">
+                <div id="wechat-login"></div>
+                <div class="wechat-help"></div>
+                <div class="help">使用帮助</div>
+            </div>
+            <div class="voice-code-link hidden">
+                <span class="btn-link text-info">没有收到校验码？</span>
+            </div>
+            <div class="remember-me">
+                <label class="form-checkbox checked"><input type="checkbox" name="remember_me" checked="checked" />记住我</label>
+            </div>
+            <div class="form-action">
+                <button type="submit" class="btn btn-primary btn-block">登录</button>
+                <div class="form-auxlinks">
+                    <b class="form-forget" title="重置密码" data-url="#">忘记密码</b>
+                    <a href = "register.htm" class="form-signup" data-url="register.htm">免费注册</a>
+                    <i>|</i>
+                    <a href="#" class="form-feedback" target="_blank">意见反馈</a>
+                    <div class="form-switch-international"><b>国际手机登录</b></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="login-banner-student"></div>
+    <div class="login-banner-teacher"></div>
+</div>
+<p class="copyright">Copyright © 2014 - 2015 阳光366版权所有.京公网安备11010802015210号 | 京ICP备14027590号-1</p>
+<script src="base/0.0.6/build/base.js"></script>
+<script src="base/common.js"></script>
+<script src="asset/static/login.js"></script>
+</body></html>
